@@ -1,0 +1,205 @@
+
+$HEADER_COLOR : #e8ffff;
+$BACKGROUND_COLOR : #f8f8f8;
+$FONT_COLOR : #505050;
+
+* {
+    color: $FONT_COLOR;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $BACKGROUND_COLOR;
+}
+
+header {
+    background-color: $HEADER_COLOR;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 30px;
+    line-height: 50px;
+    padding-left: 30px;
+    font-size: 30px;
+    color: #808080;
+}
+
+.content-wrapper {
+    padding: 10px;
+}
+.container {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+}
+
+.menu-title {
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+div.create-button {
+    position: fixed;
+    right: 5px;
+    bottom: 100px;
+
+    div.button-wrapper {
+        background-color: white;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        padding: 3px;
+
+        a {
+            display: block;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            background-color: #dff;
+            color: #a0a0a0;
+            font-size: 50px;
+            line-height: 50px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.create {
+
+    
+    .input-wrapper {
+        margin-bottom: 20px;
+
+        input {
+            width: 100%;
+            border: solid #f0f0f0 2px;
+            height: 30px;
+            font-size: 13px;
+            border-radius: 8px;
+        }
+    }
+
+    .description {
+        margin-bottom: 8px;
+        font-size: 20px;
+    }
+    div.japanese {
+
+    }
+    
+    div.english {
+
+    }
+
+    .button-wrapper {
+        button {
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            width: 60px;
+            height: 35px;
+            border: none;
+            font-size: 15px;
+            line-height: 35px;
+        }
+    }
+
+    .error-message {
+        color: #f07070;
+    }
+}
+
+.question {
+
+    %button {
+        border-radius: 5%;
+        width: 70px;
+        height: 40px;
+        border: none;
+    }
+
+    .sentence {
+        margin-bottom: 40px;
+
+        .content {
+            width: 90%;
+            height: 40px;
+            margin: 20px auto;
+            border: solid #f0f0f0 1px;
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+
+    .show-answer {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
+
+        button {
+            @extend %button;
+            background-color: #eee;
+        }
+    }
+
+    .confirm {
+        width: 80%;
+        max-width: 210px;
+        margin: 0 auto;
+
+        .button-wrapper {
+            overflow: hidden;
+        }
+
+        button.correct {
+            @extend %button;
+            float: left;            
+            background-color: rgb(198, 233, 255);
+        }
+
+        button.incorrect {
+            @extend %button;
+            float: right;
+            background-color: #faa;
+        }
+    }
+}
+
+.auth {
+    width: 80%;
+    margin: 0 auto;
+
+    & > div {
+        text-align: center;
+        margin: 10px;
+    }
+
+    .twitter {
+        button {
+            background-color: #55acee;
+            width: 100px;
+            height: 40px;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 12px;
+            line-height: 40px;
+        }    
+    }
+
+    .note {
+        margin-top: 100px;
+
+        .content {
+            color: a0a0a0;
+            font-size: 10px;
+        }
+    }
+}
+

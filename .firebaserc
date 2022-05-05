@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "practice-b0400",
+    "production": "elm-app-23184"
+  }
+}
